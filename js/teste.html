@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Entrada Processamento Saída</title>
+</head>
+<body>
+    <button onclick="myFunction()">Rodar Exemplo</button>
+
+    <p id="info"></p>
+
+    <script>
+        function MyFunction() {
+            document.getElementById("info").innerText = "Visualize o console com F12.";
+            //entrada
+            let n1 = prompt("Digite o primeiro número: ");
+            let n2 = prompt("Digite o segundo número: ");
+
+            //processamento
+            let resultado = n1 + n2;
+
+            //saída
+            console.log("Resultado da operação " + resultado);
+        }
+
+
+    </script>
+</body>
+</html>
