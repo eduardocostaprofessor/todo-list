@@ -96,7 +96,6 @@ header nav i {
 	margin-top: -1px;
 }
 
-
 /* ******************* NOTAS ******************** */
 .clear { clear: both; }
 
@@ -104,28 +103,23 @@ header nav i {
 	background-color: #FAFAFA;
 }
 main {
-	width: 80%;
+	width: 100%;
 	float: left;
-	margin: 0 8%;
+	margin: 0 auto;
 	margin-top: 10px;
 	padding: 20px;
-	/*border: 1px solid black;*/
-
 }
-
-
 section.notas { 
-	width: 100%; 
-	margin: 10px 8%; 
-	padding: 15px;
-	/*border:1px dashed black;*/
+	width: 100%; 	
+	margin: 5px auto; 
+	padding: 15px;	
+	
 }
-
 .notas article {
-	width: 215px;
+	width: 100%;
 	float: left;
 	padding: 5px;
-	margin-right: 20px;
+	/* margin-right: 10px; */
 	/*margin-bottom: 10px;*/
 	/*height: 250px;*/
 	margin-top: 20px;
@@ -258,14 +252,6 @@ div#div-new input {
 	color: #4C4C4C;
 	cursor: pointer;
 }
-
-
-
-
-
-
-
-
 @keyframes animacaoBolada {
    from {
       margin-top: 20px;
@@ -277,7 +263,12 @@ div#div-new input {
      box-shadow: -2px 3px 10px rgba(114, 104, 125, .87) ;
    }
 }
-
+@media screen and (min-width: 600px) {
+	main {
+		width: 80%;	
+		margin: 0 8%;	
+	}
+}
 
 
 
