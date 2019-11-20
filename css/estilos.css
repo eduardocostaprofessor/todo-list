@@ -1,283 +1,282 @@
 /* ******************* RESET ******************** */
 * {
-	margin: 0;
-	padding: 0;
-	font-size: 1em;
-	box-sizing: border-box;
-	font-family: 'Source Sans Pro', sans-serif;
-	color: #4C4C4C;
-
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #4c4c4c;
+  list-style: none;
+  text-decoration: none;
 }
 
-body { background-color: #e8e8e8; }
-
-a {text-decoration: none;}
+body {
+  background-color: #e8e8e8;
+}
 
 /* ******************* CABEÇALHO ******************** */
-header {
-	width: 100%;
-	float: left;
-	padding: 5px 2%;
-	background: #FFBB00;
-
-
+.header {  
+  width: 100%;
+  height: 50px; 
+  background: #ffbb00;
 }
-
-header i { 
-	width: 5%;
-	float: left;
-	margin-top: 10px;
-	cursor: pointer;
-	
-	
+input[type="checkbox"] {
+  display: none;
 }
-
-header h1 { 
-	width: 15%;
-	font-size: 1.4em;
-	margin-left: 2%;
-	float: left;
-	margin-top: 3px;
+.fa-bars {
+  width: 5%;
+  font-size: 1.5em;
+  float: left;
+  margin: 10px 15px;  
+  cursor: pointer;
 }
-header a, header strong { color: #000; }
-
-header form { 
-	width: 50%;
-	height: 45px;
-	padding: 5px;
-	float: left;
-	margin-left: 2%;
-	background: #F5B400;
+header h1 {
+  font-size: 1.4em;
+  margin-left: 2%;
+  float: left;
+  margin: 5px;
 }
-
-header form i{
-	float : left;
-	width: 5%;
-	margin-right: 3%;
-	margin-left: 1%;
-	cursor: pointer;
+header a,
+header strong {
+  color: #000;
 }
-
+header form {
+  width: 50%;
+  height: 30px;
+  margin-top: 5px; 
+  float: left;
+  margin-left: 2%;
+  background: #f5b400;
+}
+.fa-search {
+  margin-top: 5px;
+}
+header form i {
+  float: left;
+  width: 5%;
+  margin-right: 3%;
+  margin-left: 1%;
+  cursor: pointer;
+}
 header form input {
-	float : left;
-	width: 85%;
-	height: 25px;
-	margin-top: 3px;
-	margin-left: 1%;
-	font-size: 1.2em;
-	background: rgba(255, 255, 255, 0);
-	border-style: none;
-	outline: none;
-	
+  float: left;
+  width: 85%;
+  height: 25px;
+  margin-top: 3px;
+  margin-left: 1%;
+  font-size: 1.2em;
+  background: rgba(255, 255, 255, 0);
+  border-style: none;
+  outline: none;
 }
-
-header nav {
-	width: 25%;
-	float: right;
-	/*border: 1px solid black;*/
-
+nav {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-left: -110%; 
+  margin-top: 50px; 
+  transition: all 0.6s ease;
+  background: #ffbb00;  
 }
-
-header nav ul { list-style: none; padding: 5px; }
-
-header nav li {
-	float: left;
-	margin-left: 11%;
-	margin-top: 2%;
-	/*border: 1px solid black;*/
+input[type="checkbox"]:checked ~ nav {
+  margin-left: 0;  
 }
-
-header nav a {
-	text-decoration: none;
-	color: #010101;
+nav ul {  
+  margin-left: 17px;
 }
-
-header nav i {
-	margin-top: -1px;
+nav li {
+  margin-top: 10px;
+  padding-bottom: 40px;
 }
-
+nav a {  
+  color: #010101;
+}
+nav i {
+  margin-top: -1px;
+}
 
 /* ******************* NOTAS ******************** */
-.clear { clear: both; }
-
-.cirar {
-	background-color: #FAFAFA;
+.clear {
+  clear: both;
+}
+.criar {
+  background-color: #fafafa;
 }
 main {
-	width: 80%;
-	float: left;
-	margin: 0 8%;
-	margin-top: 10px;
-	padding: 20px;
-	/*border: 1px solid black;*/
-
+  width: 100%;
+  float: left;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 20px;
 }
-
-
-section.notas { 
-	width: 100%; 
-	margin: 10px 8%; 
-	padding: 15px;
-	/*border:1px dashed black;*/
+section.notas {
+  width: 100%;
+  margin: 5px auto;
+  padding: 15px;
 }
-
 .notas article {
-	width: 215px;
-	float: left;
-	padding: 5px;
-	margin-right: 20px;
-	/*margin-bottom: 10px;*/
-	/*height: 250px;*/
-	margin-top: 20px;
-	box-shadow: -1px 1px 2px rgba(114, 104, 125, .87) ;
+  width: 100%;
+  float: left;
+  padding: 5px;
+  margin-top: 20px;
+  box-shadow: -1px 1px 2px rgba(114, 104, 125, .87);
 }
 
 /* FUNDO DAS NOTAS PAR E IMPAR */
 .notas article:nth-child(odd) {
-	background-color: #A7FFEB;
+  background-color: #a7ffeb;
 }
-
 .notas article:nth-child(even) {
-	background-color: #FFFF8D;
+  background-color: #ffff8d;
 }
-
 .notas article h4 {
-	font-family: 'Lato', sans-serif;
-	margin-bottom: 10px;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 10px;
 }
-
 .notas article p {
-	font-weight: bold;
-	margin-bottom: 20px;
-	font-family: 'Lato', sans-serif;
-	font-weight: normal;
-	font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 1.1em;
 }
-
 .notas article ul {
-	list-style: none;
-	margin-left: 10px;
-	padding: 5px;
+  list-style: none;
+  margin-left: 10px;
+  padding: 5px;
 }
-
 .notas article li {
-	font-weight: normal;
-	font-family: 'Lato', sans-serif;
-	margin-bottom: 10px;
+  font-weight: normal;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 10px;
 }
 
-
-/*efeito*/
+/********** postite com efeito hover *********/
 
 .notas article:hover {
-			/*  nome animaçao 		duração estilo dalay loop alternar*/
+  /*  nome animaçao duração estilo dalay loop alternar*/
 
-	/*animation: animacaoBolada 		0.5s ease 0.1s infinite alternate;*/
-	animation: animacaoBolada 		0.80s ease 0.1s infinite alternate;
-	/*margin-top: -1px;
-	margin-left: 2px;
-	transition-property: margin-top;
-	transition-property: margin-left;
-	transition-duration: 1s;*/
+  /*animation: animacaoBolada 0.5s ease 0.1s infinite alternate;*/
+  animation: animacaoBolada 0.80s ease 0.1s infinite alternate; 
 }
-
-.notas .acoes {
-	/*border: 1px solid black;*/
-	margin: 0;
-	width: 60%;
-	height: 30px;
-	float: right;
-	padding: 5px;
-
+.notas .acoes { 
+  margin: 0;
+  width: 60%;
+  height: 30px;
+  float: right;
+  padding: 5px;
 }
-
 .notas .acoes i {
-	width: 20px;
-	margin-left: 5px;
-	/*display: none;*/
+  width: 20px;
+  margin-left: 5px;  
 }
-
 fieldset {
-		padding: 8px;
-		border-radius: 5px;
+  padding: 8px;
+  border-radius: 5px;
 }
-
-fieldset#notas label, fieldset#notas input {
-	margin-bottom: 5px;	
-	display: block;
-	width: 100%;
+fieldset#notas label,
+fieldset#notas input {
+  margin-bottom: 5px;
+  display: block;
+  width: 100%;
 }
 
 fieldset#notas input {
-	font-size: 1.2em;
-	/*background: rgba(255, 255, 255, 0);*/
-	border-style: none;
-	outline: none;
-	border-radius: 5px;
+  font-size: 1.2em;
+  border-style: none;
+  outline: none;
+  border-radius: 5px;
 }
-
-
 fieldset#nota-itens {
-	cursor: pointer;
+  cursor: pointer;
 }
-
-div#div-new { 
-	padding: 10px;
-	/*border: 1px solid red; */
+div#div-new label {
+  width: 20%;
+  float: left;
 }
-
-div#div-new label { 
-	width: 10%;
-	float: left;
-	/*border: 1px solid blue;*/
-}
-
 div#div-new input {
-	float: left;
-	width: 85%;
-	box-shadow: 4px 3px 2px #ccc;
+  float: left;
+  width: 70%;
+  box-shadow: 4px 3px 2px #ccc;
 }
-
-
-
 #mais-item {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-
-
 .salvar {
-	float: right;
-	width: 150px !important;
-	padding: 2px;
-	border-radius: 3px;
-	margin-top: 10px;
-	margin-left: 15px;
-	outline: none;
-	box-shadow: 4px 3px 2px #ccc;
-	background-color: #FFBB00;
-	color: #4C4C4C;
-	cursor: pointer;
+  float: right;
+  width: 150px !important;
+  padding: 2px;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-left: 15px;
+  outline: none;
+  box-shadow: 4px 3px 2px #ccc;
+  background-color: #ffbb00;
+  color: #4c4c4c;
+  cursor: pointer;
 }
-
-
-
-
-
-
-
-
 @keyframes animacaoBolada {
-   from {
-      margin-top: 20px;
-      box-shadow: -1px 1px 2px rgba(114, 104, 125, .87) ;
-   }
-   to { 
-     margin-top: 17px; 
-     margin-left: 5px;
-     box-shadow: -2px 3px 10px rgba(114, 104, 125, .87) ;
-   }
+  from {
+    margin-top: 20px;
+    box-shadow: -1px 1px 2px rgba(114, 104, 125, .87);
+  }
+  to {
+    margin-top: 17px;
+    margin-left: 5px;
+    box-shadow: -2px 3px 10px rgba(114, 104, 125, .87);
+  }
 }
-
-
-
-
+@media screen and (min-width: 600px) {
+  .header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .fa-bars {
+    display: none;
+  }
+  header h1 {
+    font-size: 1.5em;
+    margin-left: 10px;
+  }
+  header form {    
+    height: 40px;
+    padding: 5px; 
+    margin-top: 0; 
+  }
+  nav {
+    position: static;
+    width: 20%; 
+    margin-left: 10px;
+    margin-top: 0px; 
+  }
+  nav ul {
+    display: flex;
+    margin-left: 0;
+  }
+  nav ul li {
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+  main {
+    width: 80%;
+    margin: 0 auto;
+    float: none;
+  }
+  .notas article {
+    width: 240px;
+    margin-left: 20px;
+  }
+  div#div-new label {
+    width: 10%;
+  }
+  div#div-new input {
+    width: 85%;
+  }
+}
